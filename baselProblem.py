@@ -1,7 +1,7 @@
 from math import sqrt, pi
 
 # The precise summation of the reciprocals of the squares of the natural numbers is (PI**2)/6
-def baselProblem(n=10):
+def baselProblemMethod(n=10):
     # Initial pi value
     pi_value = 0
 
@@ -15,4 +15,4 @@ def baselProblem(n=10):
     print(f'The pi value is: {pi_value}\nThe diference is:{pi-pi_value}')
     return pi_value
 
-baselProblem(10000)
+baselProblemMethod(100000)
