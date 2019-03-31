@@ -2,7 +2,8 @@
 # For know circle and square areas we will use random numbers, for x and y position of 'n' points in the square but maybe not in the circle.
 # The area of the square/circle will be the number of points that are in the square/circle.
 # Our square will be at points: (0, 0), (0, 1), (1, 1), (1, 0), its slide is 1, and circle radius too.
-from math import sqrt, pi
+from resultPrinter import printer
+from math import sqrt
 from random import random
 
 def isInCircle(x, y):
@@ -23,8 +24,6 @@ def randomNumbersMethod(n=10):
             circleArea += 1
     # "pi is 4 times circle area divided by square area"
     pi_value = 4*circleArea/squareArea
-
-    print(f'The pi value is: {pi_value}\nThe diference is:{pi-pi_value}')
-    return pi_value
+    printer(pi_value)
 
 randomNumbersMethod(100000)
